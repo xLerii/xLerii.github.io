@@ -550,3 +550,64 @@ main {
 .card a {
     color: var(--gold)
 }
+
+.tree .hd {
+    display: flex;
+    align-items: stretch
+}
+
+    .tree .hd a {
+        flex: 1
+    }
+
+.tg {
+    background: none;
+    border: 0;
+    color: var(--mut);
+    cursor: pointer;
+    padding: 0 16px;
+    font-size: .8rem;
+    transition: transform .15s
+}
+
+.grp.open .tg {
+    transform: rotate(90deg);
+    color: var(--gold)
+}
+
+.kids {
+    display: none;
+    margin-left: 20px;
+    border-left: 1px solid var(--line)
+}
+
+.grp.open .kids {
+    display: block
+}
+
+.side nav .kids a {
+    padding-left: 16px;
+    font-size: .88rem;
+    color: #b9b19b
+}
+
+    .side nav .kids a.on {
+        color: #fff
+    }
+
+.mt {
+    margin: 10px 0 12px;
+    padding: 8px 14px;
+    border-left: 3px solid var(--gold);
+    background: #0c1015;
+    font-style: italic;
+    color: var(--gold2)
+}
+
+    .mt span {
+        display: block;
+        margin-top: 4px;
+        font-style: normal;
+        font-size: .8rem;
+        color: var(--mut)
+    }
